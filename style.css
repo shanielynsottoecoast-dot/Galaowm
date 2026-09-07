@@ -1,0 +1,530 @@
+/* ==========================================================================
+   CALL OF DUTY FAN PAGE — Bootstrap 5 + Military Theme Overlay
+   Bootstrap handles the layout & components; this file skins it.
+   Palette: #0d0d0d (bg) · #ff9900 (accent) · #e8e8e8 (text)
+   ========================================================================== */
+
+/* Fonts are loaded locally via assets/css/fonts.css (linked in index.html) */
+
+/* ---------- Base ---------- */
+body {
+  background-color: #0d0d0d;
+  color: #e8e8e8;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+::selection {
+  background: #ff9900;
+  color: #0d0d0d;
+}
+
+/* ---------- Shared ---------- */
+.section-title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: clamp(1.9rem, 4vw, 2.6rem);
+  letter-spacing: 4px;
+  color: #ff9900;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.section-title::after {
+  content: "★";
+  display: block;
+  color: #ff9900;
+  font-size: 1.1rem;
+  letter-spacing: 12px;
+  margin-top: 4px;
+}
+
+.section-sub {
+  text-align: center;
+  color: #b5b5b5;
+  max-width: 760px;
+  margin: 18px auto 55px;
+}
+
+.tagline {
+  font-style: italic;
+  color: #9a9a9a;
+  text-align: center;
+  margin-top: 45px;
+}
+
+.tagline::before,
+.tagline::after {
+  content: "—";
+  color: #ff9900;
+  margin: 0 10px;
+}
+
+.text-orange { color: #ff9900 !important; }
+.bg-dark-2 { background-color: #101010; }
+
+/* ---------- Buttons ---------- */
+.btn-cod {
+  --bs-btn-font-family: 'Rajdhani', sans-serif;
+  --bs-btn-font-weight: 700;
+  --bs-btn-font-size: 1.1rem;
+  --bs-btn-letter-spacing: 4px;
+  --bs-btn-text-transform: uppercase;
+  --bs-btn-color: #0d0d0d;
+  --bs-btn-bg: #ff9900;
+  --bs-btn-border-color: #ff9900;
+  --bs-btn-hover-color: #ff9900;
+  --bs-btn-hover-bg: transparent;
+  --bs-btn-hover-border-color: #ff9900;
+  --bs-btn-active-color: #0d0d0d;
+  --bs-btn-active-bg: #e68a00;
+  --bs-btn-active-border-color: #e68a00;
+  padding: 15px 42px;
+  clip-path: polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px);
+  transition: all 0.25s ease;
+}
+
+.btn-cod:hover,
+.btn-cod:focus-visible {
+  box-shadow: 0 0 25px rgba(255, 153, 0, 0.35);
+}
+
+/* ---------- Navbar ---------- */
+.site-header {
+  background: rgba(13, 13, 13, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 153, 0, 0.25);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.6);
+}
+
+.site-header .navbar-brand {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 1.35rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.site-header .navbar-brand em {
+  font-style: normal;
+  color: #ff9900;
+}
+
+.site-header .star { color: #ff9900; }
+
+.site-header .nav-link {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  font-size: 0.98rem;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #cfcfcf;
+  padding: 8px 14px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.site-header .nav-link:hover,
+.site-header .nav-link:focus {
+  color: #ff9900;
+}
+
+.site-header .nav-link.active {
+  color: #ff9900 !important;
+  border-bottom-color: #ff9900;
+}
+
+.site-header .navbar-toggler {
+  border: 1px solid rgba(255, 153, 0, 0.5);
+}
+
+.site-header .navbar-toggler:focus { box-shadow: none; }
+
+.site-header .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23ff9900' stroke-width='3' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url('images/hero.jpg') center center / cover no-repeat;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(13,13,13,0.78) 0%, rgba(13,13,13,0.45) 45%, rgba(13,13,13,0.95) 100%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 120px 20px 80px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: clamp(3rem, 8.5vw, 6rem);
+  letter-spacing: 10px;
+  line-height: 1.05;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0 6px 30px rgba(0, 0, 0, 0.85);
+}
+
+.hero-star {
+  color: #ff9900;
+  letter-spacing: 18px;
+  font-size: 1.3rem;
+  margin: 22px 0 18px;
+  text-shadow: 0 0 18px rgba(255, 153, 0, 0.55);
+}
+
+.hero-sub {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 500;
+  font-size: clamp(1.15rem, 2.4vw, 1.5rem);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #e6e6e6;
+  margin-bottom: 45px;
+  text-shadow: 0 3px 14px rgba(0, 0, 0, 0.9);
+}
+
+/* ---------- About ---------- */
+.about-text p { color: #c9c9c9; }
+
+.about-text strong { color: #ff9900; font-weight: 500; }
+
+.stat {
+  background: #141414;
+  border: 1px solid rgba(255, 153, 0, 0.22);
+  border-left: 4px solid #ff9900;
+  padding: 24px 22px;
+  height: 100%;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.stat:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 153, 0, 0.55);
+}
+
+.stat-number {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #ff9900;
+  line-height: 1.1;
+}
+
+.stat-label {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  color: #a8a8a8;
+  margin-top: 6px;
+}
+
+/* ---------- Game Mode Cards ---------- */
+.mode-card {
+  background: #161616;
+  border: 1px solid #262626;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mode-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(255, 153, 0, 0.6);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55), 0 0 22px rgba(255, 153, 0, 0.12);
+}
+
+.mode-card .card-img-top {
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.mode-card:hover .card-img-top { transform: scale(1.08); }
+
+.mode-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.mode-thumb::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 40%, rgba(13, 13, 13, 0.9) 100%);
+  pointer-events: none;
+}
+
+.mode-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 2;
+  background: rgba(13, 13, 13, 0.8);
+  border: 1px solid #ff9900;
+  color: #ff9900;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  font-size: 0.72rem;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+}
+
+.mode-card .card-body { padding: 26px 24px 30px; }
+
+.mode-card .card-title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 1.45rem;
+  letter-spacing: 3px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.mode-card .card-title span { color: #ff9900; }
+
+.mode-card .card-text { color: #b3b3b3; font-size: 0.97rem; }
+
+/* ---------- Loadout Cards ---------- */
+.loadout-card {
+  background: #141414;
+  border: 1px solid #262626;
+  border-top: 3px solid #ff9900;
+  padding: 32px 28px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.loadout-card .card-label {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  color: #ff9900;
+  margin-bottom: 6px;
+}
+
+.loadout-card h3 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.weapon-img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border: 1px solid #2c2c2c;
+  margin-bottom: 18px;
+}
+
+.spec-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.spec-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  font-size: 0.92rem;
+  color: #b3b3b3;
+  border-bottom: 1px dashed #2a2a2a;
+  padding-bottom: 9px;
+}
+
+.spec-list li span {
+  color: #ff9900;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: right;
+}
+
+.attach-list {
+  list-style: none;
+  padding: 0;
+  margin: 6px 0 0;
+  display: grid;
+  gap: 12px;
+}
+
+.attach-list li {
+  position: relative;
+  padding-left: 30px;
+  color: #c4c4c4;
+  font-size: 0.98rem;
+}
+
+.attach-list li::before {
+  content: "▸";
+  position: absolute;
+  left: 8px;
+  color: #ff9900;
+}
+
+.attach-note {
+  margin-top: auto;
+  padding-top: 20px;
+  color: #8f8f8f;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.operator-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+  border: 1px solid #2c2c2c;
+}
+
+.operator-meta {
+  margin-top: 18px;
+  display: grid;
+  gap: 9px;
+}
+
+.operator-meta div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.92rem;
+  color: #b3b3b3;
+  border-bottom: 1px dashed #2a2a2a;
+  padding-bottom: 8px;
+}
+
+.operator-meta span {
+  color: #ff9900;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* ---------- Contact ---------- */
+.contact-info h3 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.contact-info p { color: #b3b3b3; }
+
+.channel {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #161616;
+  border: 1px solid #262626;
+  padding: 16px 20px;
+  transition: border-color 0.25s ease;
+}
+
+.channel:hover { border-color: rgba(255, 153, 0, 0.55); }
+
+.channel-icon {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 153, 0, 0.1);
+  border: 1px solid rgba(255, 153, 0, 0.4);
+  color: #ff9900;
+  font-size: 1.1rem;
+}
+
+.channel small {
+  display: block;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #8f8f8f;
+  font-size: 0.7rem;
+}
+
+.channel b {
+  font-weight: 500;
+  color: #e6e6e6;
+  font-size: 0.98rem;
+  word-break: break-word;
+}
+
+/* ---------- Form ---------- */
+.contact-form {
+  background: #141414;
+  border: 1px solid #262626;
+  padding: 34px 32px;
+}
+
+.contact-form .form-label {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  color: #ff9900;
+}
+
+.contact-form .form-control {
+  background: #0d0d0d;
+  border: 1px solid #2e2e2e;
+  color: #eee;
+  border-radius: 0;
+  padding: 13px 15px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-form .form-control::placeholder { color: #5c5c5c; }
+
+.contact-form .form-control:focus {
+  background: #0d0d0d;
+  border-color: #ff9900;
+  box-shadow: 0 0 0 3px rgba(255, 153, 0, 0.14);
+  color: #eee;
+}
+
+/* ---------- Responsive tweaks ---------- */
+@media (max-width: 991.98px) {
+  .site-header .nav-link { padding: 10px 6px; }
+
+  .hero-content { padding: 110px 20px 70px; }
+}
+
+@media (max-width: 575.98px) {
+  .contact-form { padding: 26px 22px; }
+}
