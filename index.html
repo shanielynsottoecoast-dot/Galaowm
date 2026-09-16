@@ -1,300 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Call of Duty Fan Page | More Than a Game. It's a Mission.</title>
-  <meta name="description" content="A Call of Duty fan page — about the franchise, favorite game modes, preferred loadout, and how to connect for squad games." />
-
-  <!-- Bootstrap 5 CSS (local, self-contained) -->
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-
-  <!-- Google Fonts (local, self-contained) -->
-  <link rel="stylesheet" href="assets/css/fonts.css" />
-
-  <!-- Custom military theme on top of Bootstrap -->
-  <link rel="stylesheet" href="style.css" />
-
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23ff9900' d='M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17l-6.2 3.9 1.6-7L2 9.2l7.1-.6z'/%3E%3C/svg%3E" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rising Motor | Motorcycle Catalog</title>
+  <meta name="description" content="Rising Motor — motorcycle showroom and product catalog. Sport, street, adventure, and cruiser motorcycles from the world's top brands.">
+  <link rel="stylesheet" href="style.css">
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
 </head>
 <body>
 
-  <!-- ================= NAVBAR ================= -->
-  <nav class="navbar navbar-expand-lg fixed-top site-header" id="home">
-    <div class="container">
-      <a class="navbar-brand" href="#home">CALL <em>OF</em> DUTY <span class="star">★</span></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#modes">Game Modes</a></li>
-          <li class="nav-item"><a class="nav-link" href="#loadout">Loadout</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
+<!-- ===== Header ===== -->
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="#home" class="brand">
+      <span class="bolt">⚡</span>
+      <span class="brand-name">RISING<span class="accent">MOTOR</span></span>
+    </a>
+    <nav class="nav">
+      <a href="#home" class="active">Home</a>
+      <a href="#brands">Brands</a>
+      <a href="#sport">Sport</a>
+      <a href="#street">Street</a>
+      <a href="#adventure">Adventure</a>
+      <a href="#cruiser">Cruiser</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <span class="hero-kicker">Motorcycle Showroom &amp; Catalog</span>
+    <h1 class="hero-title">Ride High.<br><span class="accent">Ride Free.</span></h1>
+    <p class="hero-sub">From track-ready sport bikes to long-haul cruisers — find the machine that matches your ride.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#brands">Browse Brands</a>
+      <a class="btn btn-ghost" href="#sport">View Motorcycles</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><div class="num">10</div><div class="lbl">Top Brands</div></div>
+      <div class="stat"><div class="num">13</div><div class="lbl">Motorcycles</div></div>
+      <div class="stat"><div class="num">4</div><div class="lbl">Categories</div></div>
+      <div class="stat"><div class="num">4.9★</div><div class="lbl">Rider Rating</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Brands ===== -->
+<section id="brands">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag">Who We Carry</span>
+      <h2 class="section-title">Top Motorcycle Brands</h2>
+      <div class="divider"></div>
+      <p class="section-desc">Explore some of the biggest names in sport and performance motorcycles.</p>
+    </div>
+
+    <div class="brand-grid reveal">
+      <div class="brand-card">
+        <div class="brand-logo"><img src="images/logos/honda.svg" alt="Honda logo"></div>
+        <div class="brand-name-lbl">HONDA</div>
+        <div class="brand-known">Sport, street, touring, and everyday motorcycles</div>
+      </div>
+      <div class="brand-card">
+        <div class="brand-logo"><img src="images/logos/yamaha.svg" alt="Yamaha logo"></div>
+        <div class="brand-name-lbl">YAMAHA</div>
+        <div class="brand-known">Sport bikes and performance motorcycles</div>
+      </div>
+      <div class="brand-card">
+        <div class="brand-logo"><img src="images/logos/kawasaki.svg" alt="Kawasaki logo"></div>
+        <div class="brand-name-lbl">KAWASAKI</div>
+        <div class="brand-known">Ninja sport bikes and powerful street motorcycles</div>
+      </div>
+      <div class="brand-card">
+        <div class="brand-logo"><img src="images/logos/suzuki.svg" alt="Suzuki logo"></div>
+        <div class="brand-name-lbl">SUZUKI</div>
+        <div class="brand-known">GSX-R sport bikes and touring motorcycles</div>
+      </div>
+      <div class="brand-card">
+        <div class="brand-logo"><img src="images/logos/ducati.svg" alt="Ducati logo"></div>
+        <div class="brand-name-lbl">DUCATI</div>
+        <div class="brand-known">Italian premium sport and superbike performance</div>
+      </div>
+      <div class="brand-card">
+        <div class="brand-logo"><img src="images/logos/bmw.svg" alt="BMW Motorrad logo"></div>
+        <div class="brand-name-lbl">BMW MOTORRAD</div>
+        <div class="brand-known">Premium sport, touring, and adventure motorcycles</div>
+      </div>
+      <div class="brand-card">
+        <div class="brand-logo"><img src="images/logos/ktm.svg" alt="KTM logo"></div>
+        <div class="brand-name-lbl">KTM</div>
+        <div class="brand-known">Performance and racing-inspired motorcycles</div>
+      </div>
+      <div class="brand-card">
+        <div class="brand-logo"><img src="images/logos/aprilia.svg" alt="Aprilia logo"></div>
+        <div class="brand-name-lbl">APRILIA</div>
+        <div class="brand-known">Italian sport and racing motorcycles</div>
+      </div>
+      <div class="brand-card">
+        <div class="brand-logo"><img src="images/logos/triumph.svg" alt="Triumph logo"></div>
+        <div class="brand-name-lbl">TRIUMPH</div>
+        <div class="brand-known">British premium road and sport motorcycles</div>
+      </div>
+      <div class="brand-card">
+        <div class="brand-logo"><img src="images/logos/harley-davidson.svg" alt="Harley-Davidson logo"></div>
+        <div class="brand-name-lbl">HARLEY-DAVIDSON</div>
+        <div class="brand-known">American cruiser and performance motorcycles</div>
       </div>
     </div>
-  </nav>
 
-  <!-- ================= HERO ================= -->
-  <section class="hero" id="hero">
-    <div class="hero-content">
-      <h1 class="hero-title">Call of Duty</h1>
-      <div class="hero-star">★ ★ ★</div>
-      <p class="hero-sub">More than a Game. It's a Mission.</p>
-      <a href="#modes" class="btn btn-cod">Play. Fight. Win.</a>
+    <p class="section-desc" style="margin-top:28px; font-style:italic;">Brand logos are shown for educational / project presentation purposes.</p>
+  </div>
+</section>
+
+<!-- ===== Sport ===== -->
+<section id="sport">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag">Category 01</span>
+      <h2 class="section-title">Sport Motorcycles</h2>
+      <div class="divider"></div>
+      <p class="section-desc">Track-inspired machines built for speed, precision, and full-send cornering.</p>
     </div>
-  </section>
 
-  <!-- ================= ABOUT ================= -->
-  <section class="py-5" id="about">
-    <div class="container py-4">
-      <h2 class="section-title">About Call of Duty</h2>
-      <div class="row align-items-center g-5">
-        <div class="col-lg-7 about-text">
-          <p><strong>Call of Duty</strong> is one of the most iconic first-person shooter franchises in gaming history. Since its debut in 2003, the series has defined what it means to step into the boots of a soldier — from the beaches of Normandy to modern battlefields and beyond.</p>
-          <p>Every installment blends cinematic campaigns, fast-paced multiplayer, and unforgettable moments with squadmates. Whether you're clearing a building with your team, holding a hardpoint in overtime, or surviving endless rounds of the undead — every match tells a story.</p>
-          <p>For millions of players around the world, it's more than a game. <strong>It's a mission.</strong></p>
+    <div class="bike-grid reveal">
+      <article class="bike-card">
+        <div class="bike-img">
+          <span class="bike-badge">Sport</span>
+          <img src="images/bikes/sport-honda.jpg" alt="Honda CBR650R sport motorcycle">
         </div>
-        <div class="col-lg-5">
-          <div class="row g-3">
-            <div class="col-6">
-              <div class="stat">
-                <div class="stat-number">20+</div>
-                <div class="stat-label">Main Releases</div>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="stat">
-                <div class="stat-number">500M+</div>
-                <div class="stat-label">Games Sold</div>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="stat">
-                <div class="stat-number">2003</div>
-                <div class="stat-label">Franchise Debut</div>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="stat">
-                <div class="stat-number">∞</div>
-                <div class="stat-label">Rage Inducing Moments</div>
-              </div>
-            </div>
-          </div>
+        <div class="bike-body">
+          <h3 class="bike-name">Honda CBR650R</h3>
+          <div class="bike-meta">Middleweight Sport · 649cc</div>
+          <div class="bike-price"><span class="price">₱554,000</span><small>SRP</small></div>
+          <div class="bike-actions"><a class="btn-sm" href="#contact">Inquire Now</a></div>
         </div>
-      </div>
+      </article>
+
+      <article class="bike-card">
+        <div class="bike-img">
+          <span class="bike-badge">Sport</span>
+          <img src="images/bikes/sport-yamaha.jpg" alt="Yamaha YZF-R7 sport motorcycle">
+        </div>
+        <div class="bike-body">
+          <h3 class="bike-name">Yamaha YZF-R7</h3>
+          <div class="bike-meta">Supersport · 689cc CP2</div>
+          <div class="bike-price"><span class="price">₱549,000</span><small>SRP</small></div>
+          <div class="bike-actions"><a class="btn-sm" href="#contact">Inquire Now</a></div>
+        </div>
+      </article>
+
+      <article class="bike-card">
+        <div class="bike-img">
+          <span class="bike-badge">Sport</span>
+          <img src="images/bikes/sport-kawasaki.jpg" alt="Kawasaki Ninja ZX-6R sport motorcycle">
+        </div>
+        <div class="bike-body">
+          <h3 class="bike-name">Kawasaki Ninja ZX-6R</h3>
+          <div class="bike-meta">Supersport · 636cc</div>
+          <div class="bike-price"><span class="price">₱599,000</span><small>SRP</small></div>
+          <div class="bike-actions"><a class="btn-sm" href="#contact">Inquire Now</a></div>
+        </div>
+      </article>
+
+      <article class="bike-card">
+        <div class="bike-img">
+          <span class="bike-badge">Sport</span>
+          <img src="images/bikes/sport-ducati.jpg" alt="Ducati Panigale V2 sport motorcycle">
+        </div>
+        <div class="bike-body">
+          <h3 class="bike-name">Ducati Panigale V2</h3>
+          <div class="bike-meta">Superbike · 955cc L-Twin</div>
+          <div class="bike-price"><span class="price">₱988,000</span><small>SRP</small></div>
+          <div class="bike-actions"><a class="btn-sm" href="#contact">Inquire Now</a></div>
+        </div>
+      </article>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ================= GAME MODES ================= -->
-  <section class="py-5 bg-dark-2" id="modes">
-    <div class="container py-4">
-      <h2 class="section-title">Favorite Game Modes</h2>
-      <p class="section-sub">Three ways to deploy. Each one hits different — pick your battlefield and drop in.</p>
-      <div class="row g-4">
-
-        <div class="col-md-4">
-          <div class="card mode-card">
-            <div class="mode-thumb">
-              <span class="mode-badge">6v6</span>
-              <img src="images/mode-multiplayer.jpg" class="card-img-top" alt="Multiplayer firefight in an urban warzone" />
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">Multi<span>player</span></h3>
-              <p class="card-text">Fast, chaotic, and skill-heavy. Domination, Search &amp; Destroy, Hardpoint — pure gunfight chaos where reflexes and map knowledge decide who tops the lobby.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card mode-card">
-            <div class="mode-thumb">
-              <span class="mode-badge">150 Players</span>
-              <img src="images/mode-battleroyale.jpg" class="card-img-top" alt="Squad dropping into a battle royale island" />
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">Battle <span>Royale</span></h3>
-              <p class="card-text">Drop in, loot up, survive the circle. One life, massive map, and a closing gas — the perfect mix of strategy, positioning, and clutch endgame fights.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card mode-card">
-            <div class="mode-thumb">
-              <span class="mode-badge">Co-op</span>
-              <img src="images/mode-zombies.jpg" class="card-img-top" alt="Operator fighting a horde of zombies at night" />
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">Zom<span>bies</span></h3>
-              <p class="card-text">Round-based co-op survival against endless hordes of the undead. Buy doors, pack weapons, and hold the line with your squad until the very end.</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
+<!-- ===== Street ===== -->
+<section id="street">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag">Category 02</span>
+      <h2 class="section-title">Street / Naked Motorcycles</h2>
+      <div class="divider"></div>
+      <p class="section-desc">Muscular streetfighters that own the city — upright, torquey, and always ready.</p>
     </div>
-  </section>
 
-  <!-- ================= LOADOUT ================= -->
-  <section class="py-5" id="loadout">
-    <div class="container py-4">
-      <h2 class="section-title">My Preferred Loadout</h2>
-      <p class="section-sub">Tested across countless matches — this is the setup that never leaves my class slot.</p>
-      <div class="row g-4">
-
-        <div class="col-md-4">
-          <div class="loadout-card">
-            <span class="card-label">Class Slot 01</span>
-            <h3>Primary Weapon</h3>
-            <img class="weapon-img" src="images/weapon.jpg" alt="Assault rifle with suppressor, foregrip, holographic sight and extended mag" />
-            <ul class="spec-list">
-              <li>Weapon Class <span>Assault Rifle</span></li>
-              <li>Damage Range <span>38m / High</span></li>
-              <li>Fire Rate <span>631 RPM</span></li>
-              <li>Recoil Control <span>72%</span></li>
-              <li>Mobility <span>56%</span></li>
-            </ul>
-          </div>
+    <div class="bike-grid reveal">
+      <article class="bike-card">
+        <div class="bike-img">
+          <span class="bike-badge">Street</span>
+          <img src="images/bikes/street-yamaha.jpg" alt="Yamaha MT-07 naked motorcycle">
         </div>
-
-        <div class="col-md-4">
-          <div class="loadout-card">
-            <span class="card-label">Class Slot 02</span>
-            <h3>Attachments</h3>
-            <ul class="attach-list">
-              <li>Monolithic Suppressor — hides muzzle flash and boosts damage range</li>
-              <li>Commando Foregrip — tames vertical and horizontal recoil</li>
-              <li>EOTech Holographic Sight — clean sight picture for mid-range duels</li>
-              <li>50 Round Mags — extra ammo for those 1v3 clutches</li>
-              <li>Stippled Grip Tape — faster ADS when rounding corners</li>
-            </ul>
-            <p class="attach-note">Built for steady mid-range gunfights — laser accurate without sacrificing mobility.</p>
-          </div>
+        <div class="bike-body">
+          <h3 class="bike-name">Yamaha MT-07</h3>
+          <div class="bike-meta">Naked · 689cc CP2</div>
+          <div class="bike-price"><span class="price">₱439,000</span><small>SRP</small></div>
+          <div class="bike-actions"><a class="btn-sm" href="#contact">Inquire Now</a></div>
         </div>
+      </article>
 
-        <div class="col-md-4">
-          <div class="loadout-card">
-            <span class="card-label">Class Slot 03</span>
-            <h3>Operator: Ghost</h3>
-            <img class="operator-img" src="images/operator-ghost.jpg" alt="Ghost operator wearing a skull balaclava and headset" />
-            <div class="operator-meta">
-              <div>Task Force <span>141</span></div>
-              <div>Specialty <span>Recon / Stealth</span></div>
-              <div>Status <span>Ready to Deploy</span></div>
-            </div>
-          </div>
+      <article class="bike-card">
+        <div class="bike-img">
+          <span class="bike-badge">Street</span>
+          <img src="images/bikes/street-kawasaki.jpg" alt="Kawasaki Z900 naked motorcycle">
         </div>
+        <div class="bike-body">
+          <h3 class="bike-name">Kawasaki Z900</h3>
+          <div class="bike-meta">Naked · 948cc Inline-4</div>
+          <div class="bike-price"><span class="price">₱549,000</span><small>SRP</small></div>
+          <div class="bike-actions"><a class="btn-sm" href="#contact">Inquire Now</a></div>
+        </div>
+      </article>
 
-      </div>
+      <article class="bike-card">
+        <div class="bike-img">
+          <span class="bike-badge">Street</span>
+          <img src="images/bikes/street-honda.jpg" alt="Honda CB650R naked motorcycle">
+        </div>
+        <div class="bike-body">
+          <h3 class="bike-name">Honda CB650R</h3>
+          <div class="bike-meta">Neo Sports Café · 649cc</div>
+          <div class="bike-price"><span class="price">₱489,000</span><small>SRP</small></div>
+          <div class="bike-actions"><a class="btn-sm" href="#contact">Inquire Now</a></div>
+        </div>
+      </article>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ================= CONTACT ================= -->
-  <section class="py-5 bg-dark-2" id="contact">
-    <div class="container py-4">
-      <h2 class="section-title">Contact Me</h2>
-      <div class="row g-5 align-items-start">
-
-        <div class="col-lg-5 contact-info">
-          <h3>Join the Squad</h3>
-          <p>Feel free to reach out if you want to talk about Call of Duty, swap loadout ideas, or queue up for a few matches together. Always looking for squadmates who call out rotations.</p>
-          <div class="d-grid gap-3">
-            <div class="channel">
-              <div class="channel-icon">✉</div>
-              <div>
-                <small>Email</small>
-                <b>SHANIELYNSOTTOCOD@gmail.com</b>
-              </div>
-            </div>
-            <div class="channel">
-              <div class="channel-icon">🎙</div>
-              <div>
-                <small>Discord</small>
-                <b>CAMTAIN SHANIELYNSOTTO0I702</b>
-              </div>
-            </div>
-            <div class="channel">
-              <div class="channel-icon">🎮</div>
-              <div>
-                <small>Gamer Tag</small>
-                <b>GHOST-907</b>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-7">
-          <form class="contact-form" id="contactForm" novalidate>
-            <div class="row g-3">
-              <div class="col-md-6">
-                <label for="name" class="form-label">Your Name</label>
-                <input type="text" class="form-control" id="name" name="name" placeholder="e.g. SHANIELYN" required />
-              </div>
-              <div class="col-md-6">
-                <label for="email" class="form-label">Your Email</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="e.g. GANDASHANIELYN@example.com" required />
-              </div>
-              <div class="col-12">
-                <label for="message" class="form-label">Your Message</label>
-                <textarea class="form-control" id="message" name="message" rows="5" placeholder="What's on your mind, soldier?" required></textarea>
-              </div>
-              <div class="col-12">
-                <button type="submit" class="btn btn-cod">Send Message</button>
-              </div>
-              <div class="col-12">
-                <div class="form-status text-orange d-none" id="formStatus">✓ Message received, soldier. Stand by for deployment.</div>
-              </div>
-            </div>
-          </form>
-        </div>
-
-      </div>
+<!-- ===== Adventure ===== -->
+<section id="adventure">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag">Category 03</span>
+      <h2 class="section-title">Adventure Motorcycles</h2>
+      <div class="divider"></div>
+      <p class="section-desc">Built for the long way there — highways, gravel, and everything in between.</p>
     </div>
-  </section>
 
-  <!-- Bootstrap 5 JS Bundle (CDN) — navbar collapse, tooltips, atbp. -->
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <div class="bike-grid reveal">
+      <article class="bike-card">
+        <div class="bike-img">
+          <span class="bike-badge">Adventure</span>
+          <img src="images/bikes/adv-honda.jpg" alt="Honda Africa Twin adventure motorcycle">
+        </div>
+        <div class="bike-body">
+          <h3 class="bike-name">Honda Africa Twin</h3>
+          <div class="bike-meta">Adventure · 1084cc Twin</div>
+          <div class="bike-price"><span class="price">₱895,000</span><small>SRP</small></div>
+          <div class="bike-actions"><a class="btn-sm" href="#contact">Inquire Now</a></div>
+        </div>
+      </article>
 
-  <script>
-    // ---- Close mobile menu after clicking a link ----
-    const navCollapse = document.getElementById('navMenu');
-    document.querySelectorAll('#navMenu a').forEach(link => {
-      link.addEventListener('click', () => {
-        if (navCollapse.classList.contains('show')) {
-          bootstrap.Collapse.getOrCreateInstance(navCollapse).hide();
-        }
-      });
+      <article class="bike-card">
+        <div class="bike-img">
+          <span class="bike-badge">Adventure</span>
+          <img src="images/bikes/adv-bmw.jpg" alt="BMW R 1300 GS adventure motorcycle">
+        </div>
+        <div class="bike-body">
+          <h3 class="bike-name">BMW R 1300 GS</h3>
+          <div class="bike-meta">Adventure · 1300cc Boxer</div>
+          <div class="bike-price"><span class="price">₱1,250,000</span><small>SRP</small></div>
+          <div class="bike-actions"><a class="btn-sm" href="#contact">Inquire Now</a></div>
+        </div>
+      </article>
+
+      <article class="bike-card">
+        <div class="bike-img">
+          <span class="bike-badge">Adventure</span>
+          <img src="images/bikes/adv-ktm.jpg" alt="KTM 890 Adventure adventure motorcycle">
+        </div>
+        <div class="bike-body">
+          <h3 class="bike-name">KTM 890 Adventure</h3>
+          <div class="bike-meta">Adventure · 889cc LC8c</div>
+          <div class="bike-price"><span class="price">₱629,000</span><small>SRP</small></div>
+          <div class="bike-actions"><a class="btn-sm" href="#contact">Inquire Now</a></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Cruiser ===== -->
+<section id="cruiser">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag">Category 04</span>
+      <h2 class="section-title">Cruiser Motorcycles</h2>
+      <div class="divider"></div>
+      <p class="section-desc">Laid-back attitude, big torque, and long-haul comfort — cruise in style.</p>
+    </div>
+
+    <div class="bike-grid reveal">
+      <article class="bike-card">
+        <div class="bike-img">
+          <span class="bike-badge">Cruiser</span>
+          <img src="images/bikes/cruiser-honda.jpg" alt="Honda Rebel 500 cruiser motorcycle">
+        </div>
+        <div class="bike-body">
+          <h3 class="bike-name">Honda Rebel 500</h3>
+          <div class="bike-meta">Cruiser · 471cc Twin</div>
+          <div class="bike-price"><span class="price">₱299,000</span><small>SRP</small></div>
+          <div class="bike-actions"><a class="btn-sm" href="#contact">Inquire Now</a></div>
+        </div>
+      </article>
+
+      <article class="bike-card">
+        <div class="bike-img">
+          <span class="bike-badge">Cruiser</span>
+          <img src="images/bikes/cruiser-kawasaki.jpg" alt="Kawasaki Vulcan S cruiser motorcycle">
+        </div>
+        <div class="bike-body">
+          <h3 class="bike-name">Kawasaki Vulcan S</h3>
+          <div class="bike-meta">Cruiser · 649cc Parallel Twin</div>
+          <div class="bike-price"><span class="price">₱329,000</span><small>SRP</small></div>
+          <div class="bike-actions"><a class="btn-sm" href="#contact">Inquire Now</a></div>
+        </div>
+      </article>
+
+      <article class="bike-card">
+        <div class="bike-img">
+          <span class="bike-badge">Cruiser</span>
+          <img src="images/bikes/cruiser-harley.jpg" alt="Harley-Davidson Sportster cruiser motorcycle">
+        </div>
+        <div class="bike-body">
+          <h3 class="bike-name">Harley-Davidson Sportster</h3>
+          <div class="bike-meta">Cruiser · 1202cc V-Twin</div>
+          <div class="bike-price"><span class="price">₱785,000</span><small>SRP</small></div>
+          <div class="bike-actions"><a class="btn-sm" href="#contact">Inquire Now</a></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer id="contact">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h3>Rising Motor</h3>
+      <p><strong>Ride High. Ride Free.</strong></p>
+      <p>Motorcycle showroom and product catalog.</p>
+    </div>
+    <div class="footer-col">
+      <h3>Categories</h3>
+      <ul>
+        <li><a href="#sport">Sport</a></li>
+        <li><a href="#street">Street / Naked</a></li>
+        <li><a href="#adventure">Adventure</a></li>
+        <li><a href="#cruiser">Cruiser</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Brands</h3>
+      <ul>
+        <li><a href="#brands">All Brands</a></li>
+        <li><a href="#brands">Honda · Yamaha</a></li>
+        <li><a href="#brands">Kawasaki · Suzuki</a></li>
+        <li><a href="#brands">Ducati · BMW · KTM</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Rising Motor — Project catalog for educational purposes.</span>
+    <span>Made with <span class="accent">⚡</span> for riders who <span class="accent">ride free</span>.</span>
+  </div>
+</footer>
+
+<script>
+  // Reveal-on-scroll animation
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
     });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-    // ---- Active link on scroll ----
-    const sections = document.querySelectorAll('section[id], nav[id]');
-    const navLinks = document.querySelectorAll('#navMenu a');
+  // Active nav highlighting
+  const navLinks = document.querySelectorAll('.nav a');
+  const sections = [...navLinks].map(l => document.querySelector(l.getAttribute('href'))).filter(Boolean);
+  window.addEventListener('scroll', () => {
+    let current = sections[0];
+    const pos = window.scrollY + 120;
+    for (const s of sections) if (s.offsetTop <= pos) current = s;
+    navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + current.id));
+  }, { passive: true });
+</script>
 
-    window.addEventListener('scroll', () => {
-      let current = 'home';
-      sections.forEach(sec => {
-        const top = sec.offsetTop - 140;
-        if (window.scrollY >= top) current = sec.getAttribute('id');
-      });
-      navLinks.forEach(link => {
-        const isActive = link.getAttribute('href') === '#' + current;
-        link.classList.toggle('active', isActive);
-      });
-    }, { passive: true });
-
-    // ---- Contact form (demo) ----
-    document.getElementById('contactForm').addEventListener('submit', e => {
-      e.preventDefault();
-      const status = document.getElementById('formStatus');
-      status.classList.remove('d-none');
-      e.target.reset();
-      setTimeout(() => status.classList.add('d-none'), 5000);
-    });
-  </script>
 </body>
 </html>
